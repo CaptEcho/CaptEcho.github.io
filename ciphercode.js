@@ -20,14 +20,14 @@ function cipher(plaintext, shiftnum){
 
 document.getElementById('encrypt').addEventListener('click', function()
 {
-    const ptext = document.getElementById('text').value;
-    const shift = parseInt(document.getElementById('number').value) || 0;
+    const ptext = document.getElementById('plaintext').value;
+    const shift = parseInt(document.getElementById('num').value) || 0;
     document.getElementById('result').value = cipher(ptext, shift);
 });
 
 document.getElementById('decrypt').addEventListener('click', function()
 {
-    const ptext = document.getElementById('text').value;
-    const shift = parseInt(document.getElementById('number').value) || 0;
+    const ptext = document.getElementById('plaintext').value;
+    const shift = parseInt(document.getElementById('num').value) || 0;
     document.getElementById('result').value = cipher(ptext, -shift);
 });
